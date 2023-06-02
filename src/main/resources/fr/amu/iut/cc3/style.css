@@ -13,15 +13,23 @@
     -fx-background-color: "#89CFF0";
 }
 
+Text {
+    -fx-font-size: 12px;
+}
+
 Line {
     -fx-stroke: "blue";
     -fx-stroke-width: 2;
 }
 
 Label {
-    -fx-font-size: 12px;
+    -fx-font-size: 10px;
 }
 
 TextField {
-    -fx-max-width: 30px;
+    -fx-max-width: 40px;
+}
+
+#diagramme {
+    -fx-start-margin: 5px;
 }

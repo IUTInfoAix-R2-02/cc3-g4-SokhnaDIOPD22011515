@@ -17,6 +17,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 
 import java.net.URL;
@@ -43,6 +44,19 @@ public class ToileController implements Initializable {
     TextField comp5;
     @FXML
     TextField comp6;
+    @FXML
+    Circle point1;
+    @FXML
+    Circle point2;
+    @FXML
+    Circle point3;
+    @FXML
+    Circle point4;
+    @FXML
+    Circle point5;
+    @FXML
+    Circle point6;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -58,4 +72,34 @@ public class ToileController implements Initializable {
                 *  (value / noteMaximale));
     }
 
+    @FXML
+    private void ajouterPoints(){
+        point1.setCenterX(getXRadarChart(Integer.parseInt(comp1.getText()), 1));
+        point1.setCenterY(getYRadarChart(Integer.parseInt(comp1.getText()), 1));
+        point1.setRadius(5);
+
+        point2.setCenterX(getXRadarChart(Integer.parseInt(comp2.getText()), 2));
+        point2.setCenterY(getYRadarChart(Integer.parseInt(comp2.getText()), 2));
+        point2.setRadius(5);
+
+        point3.setCenterX(getXRadarChart(Integer.parseInt(comp3.getText()), 3));
+        point3.setCenterY(getYRadarChart(Integer.parseInt(comp3.getText()), 3));
+        point3.setRadius(5);
+
+        point4.setCenterX(getXRadarChart(Integer.parseInt(comp4.getText()), 4));
+        point4.setCenterY(getYRadarChart(Integer.parseInt(comp4.getText()), 4));
+        point4.setRadius(5);
+
+        point5.setCenterX(getXRadarChart(Integer.parseInt(comp5.getText()), 5));
+        point5.setCenterY(getYRadarChart(Integer.parseInt(comp5.getText()), 5));
+        point5.setRadius(5);
+
+        point6.setCenterX(getXRadarChart(Integer.parseInt(comp6.getText()), 6));
+        point6.setCenterY(getYRadarChart(Integer.parseInt(comp6.getText()), 6));
+        point6.setRadius(5);
+
+    }
+
 }
+
+//onAction="#ajouterPoint1"
