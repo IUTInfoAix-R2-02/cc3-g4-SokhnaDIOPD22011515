@@ -62,6 +62,7 @@ public class ToileController implements Initializable {
     @FXML
     Label erreur2;
 
+    int[] tableauPoints = {};
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -150,6 +151,12 @@ public class ToileController implements Initializable {
         point5.setRadius(0);
         point6.setRadius(0);
     }
+
+    /*private void tracer(){
+        for (int index = 0; index < tableauPoints.length; ++index){
+
+        }
+    }*/
 
 }
 
