@@ -11,6 +11,7 @@
 }
 #scene {
     -fx-background-color: "#89CFF0";
+    -fx-start-margin: 5px;
 }
 
 Text {
@@ -30,6 +31,11 @@ TextField {
     -fx-max-width: 40px;
 }
 
-#diagramme {
-    -fx-start-margin: 5px;
+#erreur1 {
+    -fx-text-fill: red;
 }
+
+#erreur2 {
+    -fx-text-fill: red;
+}
+

@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
@@ -56,6 +57,10 @@ public class ToileController implements Initializable {
     Circle point5;
     @FXML
     Circle point6;
+    @FXML
+    Label erreur1;
+    @FXML
+    Label erreur2;
 
 
     @Override
@@ -74,29 +79,65 @@ public class ToileController implements Initializable {
 
     @FXML
     private void ajouterPoints(){
-        point1.setCenterX(getXRadarChart(Integer.parseInt(comp1.getText()), 1));
-        point1.setCenterY(getYRadarChart(Integer.parseInt(comp1.getText()), 1));
-        point1.setRadius(5);
+        if(Integer.parseInt(comp1.getText()) > 20){
+            erreur1.setText("Erreur de saisie :");
+            erreur2.setText("Les valeurs doivent être entre 0 et 20");
+        }
+        else{
+            point1.setCenterX(getXRadarChart(Integer.parseInt(comp1.getText()), 1));
+            point1.setCenterY(getYRadarChart(Integer.parseInt(comp1.getText()), 1));
+            point1.setRadius(5);
+        }
 
-        point2.setCenterX(getXRadarChart(Integer.parseInt(comp2.getText()), 2));
-        point2.setCenterY(getYRadarChart(Integer.parseInt(comp2.getText()), 2));
-        point2.setRadius(5);
+        if(Integer.parseInt(comp2.getText()) > 20){
+            erreur1.setText("Erreur de saisie :");
+            erreur2.setText("Les valeurs doivent être entre 0 et 20");
+        }
+        else {
+            point2.setCenterX(getXRadarChart(Integer.parseInt(comp2.getText()), 2));
+            point2.setCenterY(getYRadarChart(Integer.parseInt(comp2.getText()), 2));
+            point2.setRadius(5);
+        }
 
-        point3.setCenterX(getXRadarChart(Integer.parseInt(comp3.getText()), 3));
-        point3.setCenterY(getYRadarChart(Integer.parseInt(comp3.getText()), 3));
-        point3.setRadius(5);
+        if(Integer.parseInt(comp3.getText()) > 20){
+            erreur1.setText("Erreur de saisie :");
+            erreur2.setText("Les valeurs doivent être entre 0 et 20");
+        }
+        else {
+            point3.setCenterX(getXRadarChart(Integer.parseInt(comp3.getText()), 3));
+            point3.setCenterY(getYRadarChart(Integer.parseInt(comp3.getText()), 3));
+            point3.setRadius(5);
+        }
 
-        point4.setCenterX(getXRadarChart(Integer.parseInt(comp4.getText()), 4));
-        point4.setCenterY(getYRadarChart(Integer.parseInt(comp4.getText()), 4));
-        point4.setRadius(5);
+        if(Integer.parseInt(comp4.getText()) > 20){
+            erreur1.setText("Erreur de saisie :");
+            erreur2.setText("Les valeurs doivent être entre 0 et 20");
+        }
+        else {
+            point4.setCenterX(getXRadarChart(Integer.parseInt(comp4.getText()), 4));
+            point4.setCenterY(getYRadarChart(Integer.parseInt(comp4.getText()), 4));
+            point4.setRadius(5);
+        }
 
-        point5.setCenterX(getXRadarChart(Integer.parseInt(comp5.getText()), 5));
-        point5.setCenterY(getYRadarChart(Integer.parseInt(comp5.getText()), 5));
-        point5.setRadius(5);
+        if(Integer.parseInt(comp5.getText()) > 20){
+            erreur1.setText("Erreur de saisie :");
+            erreur2.setText("Les valeurs doivent être entre 0 et 20");
+        }
+        else {
+            point5.setCenterX(getXRadarChart(Integer.parseInt(comp5.getText()), 5));
+            point5.setCenterY(getYRadarChart(Integer.parseInt(comp5.getText()), 5));
+            point5.setRadius(5);
+        }
 
-        point6.setCenterX(getXRadarChart(Integer.parseInt(comp6.getText()), 6));
-        point6.setCenterY(getYRadarChart(Integer.parseInt(comp6.getText()), 6));
-        point6.setRadius(5);
+        if(Integer.parseInt(comp6.getText()) > 20){
+            erreur1.setText("Erreur de saisie :");
+            erreur2.setText("Les valeurs doivent être entre 0 et 20");
+        }
+        else {
+            point6.setCenterX(getXRadarChart(Integer.parseInt(comp6.getText()), 6));
+            point6.setCenterY(getYRadarChart(Integer.parseInt(comp6.getText()), 6));
+            point6.setRadius(5);
+        }
 
     }
 
