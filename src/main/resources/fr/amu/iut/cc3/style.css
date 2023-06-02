@@ -13,6 +13,10 @@
     -fx-background-color: "#89CFF0";
 }
 
+Pane {
+    -fx-alignment: center;
+}
+
 Text {
     -fx-font-size: 12px;
 }

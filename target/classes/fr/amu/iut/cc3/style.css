@@ -11,7 +11,10 @@
 }
 #scene {
     -fx-background-color: "#89CFF0";
-    -fx-start-margin: 5px;
+}
+
+Pane {
+    -fx-alignment: center;
 }
 
 Text {

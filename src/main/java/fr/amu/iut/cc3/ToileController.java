@@ -141,6 +141,16 @@ public class ToileController implements Initializable {
 
     }
 
+    @FXML
+    private void viderDiagramme(){
+        point1.setRadius(0);
+        point2.setRadius(0);
+        point3.setRadius(0);
+        point4.setRadius(0);
+        point5.setRadius(0);
+        point6.setRadius(0);
+    }
+
 }
 
 //onAction="#ajouterPoint1"
