@@ -31,6 +31,18 @@ public class ToileController implements Initializable {
     private static int angleDepart = 90;
     private static int noteMaximale = 20;
 
+    @FXML
+    TextField comp1;
+    @FXML
+    TextField comp2;
+    @FXML
+    TextField comp3;
+    @FXML
+    TextField comp4;
+    @FXML
+    TextField comp5;
+    @FXML
+    TextField comp6;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

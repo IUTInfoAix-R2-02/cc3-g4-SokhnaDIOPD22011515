@@ -9,8 +9,19 @@
 .croix {
     -fx-stroke: "#919090";
 }
+#scene {
+    -fx-background-color: "#89CFF0";
+}
 
 Line {
     -fx-stroke: "blue";
     -fx-stroke-width: 2;
+}
+
+Label {
+    -fx-font-size: 12px;
+}
+
+TextField {
+    -fx-max-width: 30px;
 }
